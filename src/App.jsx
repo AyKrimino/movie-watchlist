@@ -1,5 +1,13 @@
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
 };
 
 export default App;
