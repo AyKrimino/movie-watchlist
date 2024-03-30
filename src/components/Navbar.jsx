@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="ml-4">
         <a href="#" className="flex items-center justify-center">
           <img className="h-10 w-auto" src={logo} alt="movie watchlist logo" />
-          <span className="ml-2 text-blue-400 hover:text-blue-300 md:text-lg sm:text-base text-sm font-bold">
+          <span className="ml-2 text-blue-400 hover:text-blue-500 md:text-lg sm:text-base text-sm font-bold">
             Movie Watchlist
           </span>
         </a>

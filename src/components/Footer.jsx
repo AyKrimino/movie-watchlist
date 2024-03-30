@@ -4,7 +4,7 @@ import linkedinLogo from "../assets/images/linkedinLogo.png";
 
 const Footer = () => {
   return (
-    <div className="h-20 bg-zinc-700 mt-4 flex justify-around items-center">
+    <div className="h-20 bg-zinc-700 flex justify-around items-center">
       <div className="">
         <span className="text-gray-50 md:text-base sm:text-sm text-xs font-bold ml-4">
           Copyright &copy; WatchList {new Date().getFullYear()}
