@@ -1,6 +1,9 @@
 import { FaStar } from "react-icons/fa";
+import { useState } from "react";
 
 const MovieListing = ({ poster, title, description, rating }) => {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
   return (
     <div className="bg-zinc-700 m-2 rounded-lg border-2 border-zinc-500 shadow-md md:flex">
       <div className="flex justify-center mt-2 md:m-2">
@@ -12,15 +15,30 @@ const MovieListing = ({ poster, title, description, rating }) => {
       </div>
       <div className="ml-3 mb-3">
         <div className="mt-2">
-          <span className="text-2xl md:text-3xl lg:text-4xl font-bold capitalize text-blue-400">
+          <span
+            id="description"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold capitalize text-blue-400"
+          >
             {title}
           </span>
         </div>
         <div className="mt-2">
           <span className="text-sm md:text-base lg:text-lg font-light text-gray-50">
-            {description}
+            {showFullDescription
+              ? description
+              : description.substring(0, 50) + "..."}
           </span>
         </div>
+        <button
+          onClick={() =>
+            setShowFullDescription(
+              (prevShowFullDescription) => !prevShowFullDescription
+            )
+          }
+          className="text-blue-400 mb-5 hover:text-indigo-500"
+        >
+          Show {showFullDescription ? "less" : "more"}
+        </button>
         <div className="flex items-center mt-2">
           <span className="text-gray-50 font-light text-sm md:text-base lg:text-lg">
             Rating: {rating}
