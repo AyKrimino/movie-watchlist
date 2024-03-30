@@ -1,19 +1,12 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import MovieListing from "./components/MovieListing";
+import MovieListings from "./components/MovieListings";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <MovieListing />
-      <MovieListing />
-      <MovieListing />
-      <MovieListing />
-      <MovieListing />
-      <MovieListing />
-      <MovieListing />
-      <MovieListing />
+      <MovieListings />
       <Footer />
     </>
   );
