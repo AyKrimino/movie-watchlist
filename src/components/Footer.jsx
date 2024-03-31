@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import facebookLogo from "../assets/images/facebookLogo.png";
 import instagramLogo from "../assets/images/instagramLogo.png";
 import linkedinLogo from "../assets/images/linkedinLogo.png";
@@ -11,32 +12,32 @@ const Footer = () => {
         </span>
       </div>
       <div className="flex items-center justify-center">
-        <div className=" bg-zinc-800 hover:bg-zinc-900 cursor-pointer rounded-full p-2 w-fit mr-3">
-          <a href="#">
+        <div className="select-none bg-zinc-800 hover:bg-zinc-900 cursor-pointer rounded-full p-2 w-fit mr-3">
+          <Link to="#">
             <img
               className="h-6 w-auto"
               src={facebookLogo}
               alt="facebook logo"
             />
-          </a>
+          </Link>
         </div>
-        <div className=" bg-zinc-800 hover:bg-zinc-900 cursor-pointer rounded-full p-2 w-fit mr-3">
-          <a href="#">
+        <div className="select-none bg-zinc-800 hover:bg-zinc-900 cursor-pointer rounded-full p-2 w-fit mr-3">
+          <Link to="#">
             <img
               className="h-6 w-auto"
               src={instagramLogo}
               alt="instagram logo"
             />
-          </a>
+          </Link>
         </div>
-        <div className=" bg-zinc-800 hover:bg-zinc-900 cursor-pointer rounded-full p-2 w-fit mr-4">
-          <a href="#">
+        <div className="select-none bg-zinc-800 hover:bg-zinc-900 cursor-pointer rounded-full p-2 w-fit mr-4">
+          <Link to="#">
             <img
               className="h-6 w-auto"
               src={linkedinLogo}
               alt="linkedin logo"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

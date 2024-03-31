@@ -1,13 +1,13 @@
-import data from "../movies.json";
 import { useState } from "react";
+import data from "../movies.json";
 import MovieListing from "./MovieListing";
 
-const MovieListings = () => {
+const MovieListings = ({ isHome = true }) => {
   const [movies, setMovies] = useState(data);
 
   return (
     <div className="">
-      {movies.map((movie) => (
+      {(isHome ? movies.slice(0, 3) : movies).map((movie) => (
         <MovieListing
           key={movie.id}
           poster={movie.poster}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
 
@@ -35,7 +36,7 @@ const MovieListing = ({ poster, title, description, rating }) => {
               (prevShowFullDescription) => !prevShowFullDescription
             )
           }
-          className="text-blue-400 mb-5 hover:text-indigo-500"
+          className="text-blue-400 mb-5 hover:text-indigo-500 select-none"
         >
           Show {showFullDescription ? "less" : "more"}
         </button>
@@ -48,9 +49,12 @@ const MovieListing = ({ poster, title, description, rating }) => {
           </div>
         </div>
         <div className="mt-2 mb-2">
-          <button className="bg-blue-400 px-3 py-1 rounded-lg text-blue-50 hover:bg-blue-500 select-none">
+          <Link
+            to="/movies/id"
+            className="bg-blue-400 px-3 py-1 rounded-lg text-blue-50 hover:bg-blue-500 select-none cursor-pointer"
+          >
             Read more
-          </button>
+          </Link>
         </div>
       </div>
     </div>
