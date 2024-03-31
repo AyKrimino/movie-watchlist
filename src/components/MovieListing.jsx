@@ -11,7 +11,7 @@ const MovieListing = ({ poster, title, description, rating }) => {
         <img
           className="max-h-60 max-w-48 md:max-h-72 md:max-w-56 shadow-md select-none"
           src={poster}
-          alt="Movie image"
+          alt={`${title} movie poster`}
         />
       </div>
       <div className="ml-3 mb-3">
