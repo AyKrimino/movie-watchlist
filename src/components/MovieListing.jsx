@@ -10,7 +10,7 @@ const MovieListing = ({ poster, title, description, rating }) => {
       <div className="flex justify-center mt-2 md:m-2">
         <img
           className="max-h-60 max-w-48 md:max-h-72 md:max-w-56 shadow-md select-none"
-          src={poster}
+          src={`http://127.0.0.1:8000${poster}`}
           alt={`${title} movie poster`}
         />
       </div>

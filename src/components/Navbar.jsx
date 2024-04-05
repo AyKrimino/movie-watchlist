@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const linkClass = ({ isActive }) =>
-    isActive ? "mr-3 text-blue-400" : "mr-3 hover:text-blue-40";
+    isActive ? "mr-3 text-blue-400" : "mr-3 hover:text-blue-400";
 
   return (
     <div className="bg-zinc-700 h-20 flex items-center justify-between">
