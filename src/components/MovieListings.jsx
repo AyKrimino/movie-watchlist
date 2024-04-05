@@ -27,6 +27,7 @@ const MovieListings = ({ isHome = true }) => {
           title={movie.title}
           description={movie.plot}
           rating={movie.rating}
+          id={movie.id}
         />
       ))}
     </div>

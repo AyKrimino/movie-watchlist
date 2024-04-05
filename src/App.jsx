@@ -14,7 +14,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<HomePage />} />
       <Route path="/movies" element={<MoviesPage />} />
-      <Route path="/movies/id" element={<MoviePage />} />
+      <Route path="/movies/:id" element={<MoviePage />} />
     </Route>
   )
 );

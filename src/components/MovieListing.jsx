@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
 
-const MovieListing = ({ poster, title, description, rating }) => {
+const MovieListing = ({ id, poster, title, description, rating }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   return (
@@ -50,7 +50,7 @@ const MovieListing = ({ poster, title, description, rating }) => {
         </div>
         <div className="mt-2 mb-2">
           <Link
-            to="/movies/id"
+            to={`/movies/${id}/`}
             className="bg-blue-400 px-3 py-1 rounded-lg text-blue-50 hover:bg-blue-500 select-none cursor-pointer"
           >
             Read more
